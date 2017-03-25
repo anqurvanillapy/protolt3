@@ -8,12 +8,14 @@
 #ifndef __PROTOLT3_PROTOLT3_H
 #define __PROTOLT3_PROTOLT3_H
 
-namespace protolt3 {
+typedef struct {
 
-}
+} protolt3_ctx_t;
 
-class protolt3_packet {
+typedef struct {
+    protolt3_ctx_t *ctx;
+} protolt3_packet_t;
 
-};
+void _hot_switch(protolt3_ctx_t *ctx);
 
 #endif // !__PROTOLT3_PROTOLT3_H
